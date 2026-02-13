@@ -117,7 +117,7 @@ Sentinal-AI/
 
 ### 1️⃣ Clone the Repository
 
-```bash
+bash
 git clone https://github.com/YOUR_USERNAME/Sentinal-AI.git
 cd Sentinal-AI
 
@@ -134,7 +134,7 @@ uvicorn backend.main:app --reload
 
 Server runs at:
 http://127.0.0.1:8000
-'''
+
 ---------
 
 ### 📡 API Usage
