@@ -144,39 +144,50 @@ http://127.0.0.1:8000
 
 📡 API Usage
 Endpoint: Analyze URL
-Request Body Example
-{
-  "url": "http://example.com"
-}
-Response Example
-{
-  "prediction": "Legitimate",
-  "confidence": 0.93
-}
-🧪 How It Works
-Client sends URL to FastAPI endpoint
-Feature engine extracts security-relevant features
-ML model processes feature vector
-API returns classification result
-
-🌍 Production Details
-Deployed on Render (Free Tier)
-Auto redeploy on GitHub push
-Dependency-managed environment
-Production Uvicorn server configuration
-
-Live Endpoint:
-https://sentinal-ai-ai-powered-phishing.onrender.com
-
-📈 Future Enhancements
-Frontend Dashboard (React / Next.js)
-Database integration for threat logging
-Blacklist API integration
-Real-time domain reputation lookup
-Model retraining pipeline
+Method: POST
+Path: /analyze
+Request Body Format:
+Send a JSON object containing a single field:
+url → The website link you want to analyze
+Example request structure:
+url: http://example.com
+Response Fields:
+prediction → Classification result (Legitimate or Phishing)
+confidence → Probability score (0 to 1)
+The API processes the URL, extracts security-relevant features, runs the machine learning model, and returns the classification result in real time.
+Swagger documentation is available at:
+/docs
+📈 Feature Enhancements (Roadmap)
+🔐 Security Improvements
+Rate limiting to prevent abuse
+API key authentication
+JWT-based user access control
+HTTPS enforcement
+🧠 AI Enhancements
+Deep learning-based URL embedding model
+Transformer-based phishing detection
+Continuous model retraining pipeline
+Ensemble learning approach
+🌐 Threat Intelligence Integration
+Real-time blacklist API integration
+Domain reputation scoring
+WHOIS lookup enrichment
+IP intelligence mapping
+📊 Monitoring & Analytics
+Logging prediction history
+Threat frequency tracking dashboard
+Real-time alert system
+Admin analytics panel
+⚙️ Infrastructure Improvements
 Docker containerization
-Rate limiting & authentication
-Threat intelligence analytics dashboard
-
+Kubernetes deployment
+CI/CD pipeline automation
+Load balancing support
+Redis caching for faster predictions
+🖥️ Frontend Expansion
+React-based dashboard
+Visualization of phishing patterns
+User submission history
+Threat heatmap view
 👩‍💻 Author
 Neha Suram
