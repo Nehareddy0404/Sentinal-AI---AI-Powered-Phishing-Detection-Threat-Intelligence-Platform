@@ -54,17 +54,12 @@ This backend is fully deployed in production using **FastAPI** and **Render**.
 
 ---
 
-## 🏗️ System Architecture
-
-Client Request
-↓
-FastAPI Endpoint
-↓
-Feature Engineering Module
-↓
-Machine Learning Model
-↓
-Prediction Response (JSON)
+###🏗️ System Architecture
+- Client sends URL request
+- FastAPI receives and validates input
+- Feature Engineering module extracts security features
+- Machine Learning model processes feature vector
+- API returns prediction response in JSON format
 
 ----
 
@@ -142,52 +137,52 @@ http://127.0.0.1:8000
 '''
 ---------
 
-📡 API Usage
-Endpoint: Analyze URL
-Method: POST
-Path: /analyze
-Request Body Format:
-Send a JSON object containing a single field:
-url → The website link you want to analyze
-Example request structure:
-url: http://example.com
-Response Fields:
-prediction → Classification result (Legitimate or Phishing)
-confidence → Probability score (0 to 1)
-The API processes the URL, extracts security-relevant features, runs the machine learning model, and returns the classification result in real time.
-Swagger documentation is available at:
-/docs
-📈 Feature Enhancements (Roadmap)
-🔐 Security Improvements
-Rate limiting to prevent abuse
-API key authentication
-JWT-based user access control
-HTTPS enforcement
-🧠 AI Enhancements
-Deep learning-based URL embedding model
-Transformer-based phishing detection
-Continuous model retraining pipeline
-Ensemble learning approach
-🌐 Threat Intelligence Integration
-Real-time blacklist API integration
-Domain reputation scoring
-WHOIS lookup enrichment
-IP intelligence mapping
-📊 Monitoring & Analytics
-Logging prediction history
-Threat frequency tracking dashboard
-Real-time alert system
-Admin analytics panel
-⚙️ Infrastructure Improvements
-Docker containerization
-Kubernetes deployment
-CI/CD pipeline automation
-Load balancing support
-Redis caching for faster predictions
-🖥️ Frontend Expansion
-React-based dashboard
-Visualization of phishing patterns
-User submission history
-Threat heatmap view
-👩‍💻 Author
-Neha Suram
+### 📡 API Usage
+
+- Endpoint: Analyze URL
+- Method: POST
+- Path: /analyze
+- Request Body Format:
+- Send a JSON object containing a single field:
+- url → The website link you want to analyze
+- Example request structure:
+- url: http://example.com
+- Response Fields:
+- prediction → Classification result (Legitimate or Phishing)
+- confidence → Probability score (0 to 1)
+- The API processes the URL, extracts security-relevant features, runs the machine learning model, and returns the classification result in real time.
+
+### 📈 Feature Enhancements (Roadmap)
+### 🔐 Security Improvements
+- Rate limiting to prevent abuse
+- API key authentication
+- JWT-based user access control
+- HTTPS enforcement
+### 🧠 AI Enhancements
+- Deep learning-based URL embedding model
+- Transformer-based phishing detection
+- Continuous model retraining pipeline
+- Ensemble learning approach
+### 🌐 Threat Intelligence Integration
+- Real-time blacklist API integration
+- Domain reputation scoring
+- WHOIS lookup enrichment
+- IP intelligence mapping
+### 📊 Monitoring & Analytics
+- Logging prediction history
+- Threat frequency tracking dashboard
+- Real-time alert system
+- Admin analytics panel
+### ⚙️ Infrastructure Improvements
+- Docker containerization
+- Kubernetes deployment
+- CI/CD pipeline automation
+- Load balancing support
+- Redis caching for faster predictions
+### 🖥️ Frontend Expansion
+- React-based dashboard
+- Visualization of phishing patterns
+- User submission history
+- Threat heatmap view
+###👩‍💻 Author
+- Neha Suram
