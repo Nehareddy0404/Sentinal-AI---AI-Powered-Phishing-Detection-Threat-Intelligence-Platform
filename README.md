@@ -117,7 +117,6 @@ Sentinal-AI/
 
 -----
 
----
 
 ## ⚙️ Local Setup
 
@@ -126,7 +125,6 @@ Sentinal-AI/
 ```bash
 git clone https://github.com/YOUR_USERNAME/Sentinal-AI.git
 cd Sentinal-AI
-'''
 
 2️⃣ Create Virtual Environment
 python -m venv venv
@@ -141,6 +139,8 @@ uvicorn backend.main:app --reload
 
 Server runs at:
 http://127.0.0.1:8000
+'''
+---------
 
 📡 API Usage
 Endpoint: Analyze URL
