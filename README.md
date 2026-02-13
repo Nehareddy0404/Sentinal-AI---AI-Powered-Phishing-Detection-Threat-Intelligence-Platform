@@ -112,7 +112,7 @@ Sentinal-AI/
 
 -----
 
-
+```bash
 ## ⚙️ Local Setup
 
 ### 1️⃣ Clone the Repository
@@ -134,6 +134,8 @@ uvicorn backend.main:app --reload
 
 Server runs at:
 http://127.0.0.1:8000
+
+```
 
 ---------
 
