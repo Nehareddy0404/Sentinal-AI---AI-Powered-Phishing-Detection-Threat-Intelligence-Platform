@@ -186,6 +186,6 @@ http://127.0.0.1:8000
 - Visualization of phishing patterns
 - User submission history
 - Threat heatmap view
- ----- 
-###👩‍💻 Author
+ -----
+ **Author**
 - Neha Suram
